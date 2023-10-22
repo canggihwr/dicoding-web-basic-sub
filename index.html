@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GOR Garuda</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navbar-container">
+        <a href="index.html" id="logo">
+          <img src="assets/img/logo-light.png" alt="Logo">
+        </a>
+        <div class="navbar">
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li class="dropdown">
+              <a class="dropbtn">Showcase</a>
+              <div class="dropdown-content">
+                  <a href="#showcase">Landing Page</a>
+                  <a href="#dashboard">Dashboard</a>
+              </div>
+            </li>
+            <li><a href="#map">Location</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="content">
+      
+      <article id="overview" class="card-main">
+        <h2 id="overview">Project Overview</h2>
+        <img src="assets/img/logo-dark.png" alt="gambar" style="width: 60%;">
+        <p><b>GOR Garuda</b> merupakan salah satu penyedia layanan penyewaan lapangan bulu tangkis (badminton) di Kota Mataram. Lapangan di GOR ini menggunakan standar garis dan ukuran sesuai peraturan bermain bulu tangkis, dan lapangan dibangun dengan kualitas terbaik sehingga pemain dapat berolahraga dengan nyaman. Project web ini saya buat untuk memudahkan proses penyewaan lapangan di GOR Garuda, sekaligus untuk memenuhi tugas akhir mata kuliah Pemrograman Web di kampus. Web ini saya buat menggunakan Laravel 9 dan framework Bootstrap. Dibawah saya lampirkan beberapa tampilan dari webnya.</p>
+      </article>
+
+      <article id="showcase" class="card-main">
+        <h2 id="showcase">Project Showcase</h2>
+        <section id="landing">
+          <h3>Landing Page</h3>
+          <div class="slideshow-container reel">
+            <div class="slides">
+              <img src="assets/img/landing1.gif" alt="Hero Image">
+            </div>
+            <div class="slides"> 
+              <img src="assets/img/landing3.png" alt="Cara Pemesanan">
+            </div>
+            <br>
+            <div class="slidebtn">
+              <a class="prev" onclick="next_slide(-1,0)">&#10094;</a>
+              <div class="bullet">
+                <span class="bullets"></span>
+                <span class="bullets"></span>
+              </div>
+              <a class="next" onclick="next_slide(1,0)">&#10095;</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="dashboard">
+          <h3>Dashboard</h3>
+          <div class="slideshow-container reel">
+            <div class="slides1">
+              <img src="assets/img/dashboard1.png" alt="dashboard">
+            </div>
+            <div class="slides1"> 
+              <img src="assets/img/dashboard2.png" alt="member">
+            </div>
+            <div class="slides1"> 
+              <img src="assets/img/dashboard3.png" alt="lapangan">
+            </div>
+            <div class="slides1"> 
+              <img src="assets/img/dashboard4.png" alt="paket">
+            </div>
+            <div class="slides1"> 
+              <img src="assets/img/dashboard5.png" alt="peralatan">
+            </div>
+            <div class="slides1"> 
+              <img src="assets/img/dashboard6.gif" alt="booking">
+            </div>
+
+            <br>
+            <div class="slidebtn">
+              <a class="prev" onclick="next_slide(-1,1)">&#10094;</a>
+              <div class="bullet">
+                <span class="bullets1"></span>
+                <span class="bullets1"></span>
+                <span class="bullets1"></span>
+                <span class="bullets1"></span>
+                <span class="bullets1"></span>
+                <span class="bullets1"></span>
+              </div>
+              <a class="next" onclick="next_slide(1,1)">&#10095;</a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <aside>
+      <article id="map" class="map card">
+        <header>
+          <h2>GOR Garuda Location</h2>
+        </header>
+        <section id="googlemaps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.037565777314!2d116.08655207487007!3d-8.592386687234221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdbf7f50de0c8b%3A0x1664f3972be24030!2sGOR%20Badminton%20Garuda!5e0!3m2!1sen!2ssg!4v1693928378142!5m2!1sen!2ssg" width="100%" height="200" frameborder="0" style="border:0"></iframe>
+        </section>
+        <p>Jl. Swasembada No.32, Kekalik Jaya, Kec. Sekarbela, Kota Mataram</p>
+
+      </article>
+      <article id="about" class="about card">
+        <header>
+          <h2>About Me</h2>
+          <figure>
+            <img src="assets/img/profil.jpg">
+            <figcaption>profil</figcaption>
+          </figure>
+        </header>
+        <section id="about">
+          <h2>Canggih Wahyu Rinaldi</h2>
+          <p>Mahasiswa Ilmu Komputer - Universitas Bumigora</p>
+          <h4>Kontak</h4>
+          <table>
+            <tr>
+              <td>canggihrinaldi8@gmail.com</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/canggihwr">www.github.com/canggihwr</a></td>
+            </tr>
+            </tr>
+          </table>
+        </section>
+      </article>
+    </aside>
+  </main>
+</body>
+<footer>
+  <p>GOR Bulutangkis Garuda &copy; 2023 | Canggih Wahyu Rinaldi</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</html>
